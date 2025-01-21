@@ -1,0 +1,82 @@
+[
+    {
+        "Nombre": "Juan",
+        "Apellidos": "Pérez Gómez",
+        "email": "juan.perez@example.com",
+        "Fecha_de_nacimiento": "1990-05-15",
+        "País_de_residencia": "México",
+        "Ciudad_de_residencia": "Ciudad de México"
+    },
+    {
+        "Nombre": "Ana",
+        "Apellidos": "López Martínez",
+        "email": "ana.lopez@example.com",
+        "Fecha_de_nacimiento": "1985-11-22",
+        "País_de_residencia": "España",
+        "Ciudad_de_residencia": "Madrid"
+    },
+    {
+        "Nombre": "Michael",
+        "Apellidos": "Johnson",
+        "email": "michael.johnson@example.com",
+        "Fecha_de_nacimiento": "1992-03-08",
+        "País_de_residencia": "Estados Unidos",
+        "Ciudad_de_residencia": "Nueva York"
+    },
+    {
+        "Nombre": "Sofia",
+        "Apellidos": "Hernández Torres",
+        "email": "sofia.hernandez@example.com",
+        "Fecha_de_nacimiento": "1998-07-12",
+        "País_de_residencia": "Argentina",
+        "Ciudad_de_residencia": "Buenos Aires"
+    },
+    {
+        "Nombre": "Liam",
+        "Apellidos": "Brown",
+        "email": "liam.brown@example.com",
+        "Fecha_de_nacimiento": "1980-01-19",
+        "País_de_residencia": "Canadá",
+        "Ciudad_de_residencia": "Toronto"
+    },
+    {
+        "Nombre": "Emma",
+        "Apellidos": "Smith",
+        "email": "emma.smith@example.com",
+        "Fecha_de_nacimiento": "1995-09-10",
+        "País_de_residencia": "Reino Unido",
+        "Ciudad_de_residencia": "Londres"
+    },
+    {
+        "Nombre": "Carlos",
+        "Apellidos": "Fernández Ruiz",
+        "email": "carlos.fernandez@example.com",
+        "Fecha_de_nacimiento": "1988-02-17",
+        "País_de_residencia": "Chile",
+        "Ciudad_de_residencia": "Santiago"
+    },
+    {
+        "Nombre": "Yuki",
+        "Apellidos": "Tanaka",
+        "email": "yuki.tanaka@example.com",
+        "Fecha_de_nacimiento": "1991-06-30",
+        "País_de_residencia": "Japón",
+        "Ciudad_de_residencia": "Tokio"
+    },
+    {
+        "Nombre": "Amara",
+        "Apellidos": "Okafor",
+        "email": "amara.okafor@example.com",
+        "Fecha_de_nacimiento": "1993-04-25",
+        "País_de_residencia": "Nigeria",
+        "Ciudad_de_residencia": "Lagos"
+    },
+    {
+        "Nombre": "Elena",
+        "Apellidos": "Popova",
+        "email": "elena.popova@example.com",
+        "Fecha_de_nacimiento": "1986-12-14",
+        "País_de_residencia": "Rusia",
+        "Ciudad_de_residencia": "Moscú"
+    }
+]

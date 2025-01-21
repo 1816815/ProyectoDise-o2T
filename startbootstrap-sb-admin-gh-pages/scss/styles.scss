@@ -1,0 +1,41 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+$body-bg: lightgrey;
+
+#usuariosTable, #publicacionesTable {
+  tr.elemento-bloqueado {
+
+      td:not(:last-child) {
+          opacity: 0.5 !important;
+      }
+
+
+      .btn-primary, 
+      .btn-secondary {
+          pointer-events: none !important;
+          opacity: 0.65 !important;
+          cursor: not-allowed !important;
+      }
+
+  }
+  tr.elemento-bloqueado:hover {
+    td:not(:last-child) {
+      opacity: 0.8 !important;
+  }
+}
+}
+
+
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
