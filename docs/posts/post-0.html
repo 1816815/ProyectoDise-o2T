@@ -35,12 +35,31 @@
    <p>Compresión con pérdidas es el método de reducir el tamaño de una imagen calculando los intervalos de colores
      entre dos puntos de la imagen para poder predecir los colores en los píxeles intermedios. Esto reduce la calidad
       de una imagen, pero también la vuelve más ligera. Se estima que una imagen webp comprimida con pérdidas es entre
-      un 25 y un 34% más pequeña que una imagen JPEG, formato del que hablaremos más adelante.
+      un 25 y un 34% más pequeña que una imagen JPG, formato del que hablaremos más adelante.
    </p>
    <p>La compresión sin pérdidas crea archivos más grandes porque prioriza mantener la calidad de la imagen frente a la
     optimización de su tamaño. El formato de compresión sin pérdidas por excelencia era el PNG, sin embargo, se estima que
     los archivos WebP con compresión sin pérdida son un 26% más pequeños que los archivos PNG.
    </p>
-   <h2>JPEG</h2>
+   <h2>JPEG o JPG</h2>
+   <p>Pueden haber usuarios que piensen que se tratan de dos formatos distintos, distinguidos por una letra. En la informática
+    esto es algo que acostumbra a ocurrir, sin embargo, esta vez no es el caso. JPEG corresponde a las siglas de Joint Photographic
+     Experts Group, los creadores del formato. Por limitaciones de antiquísimas versiones de Windows, estas siglas se abreviaron a
+     JPG, pero el formato y la tecnología de compresión es la misma.
+   </p>
+   <figure>
+    <img src="./assets/img/JPG-vs-JPEG01.jpg" alt="Ilustración de JPG vs JPEG">
+    <figcaption>No se trata de dos formatos enfrentados, siguen siendo el mismo tipo de archivo, solo cambian su extensión</figcaption>
+   </figure>
+   <p>Como explicamos anteriormente, el formato JPG emplea un algoritmo de compresión con pérdidas para predecir el valor de los 
+    píxeles intermedios entre dos puntos y aligerar de este modo el espacio que ocupa una imagen. Este efecto es persistente, 
+    por ejemplo, si tomases la imagen jpg que tenemos justo encima y empleases Photoshop o algún conversor online para convertir
+    la imagen a formato PNG, no se desharía el método de compresión para adoptar el nuevo. El resultado habitual en estos casos 
+    acostumbra a ser el de obtener una imagen PNG que pesa más que el JPG original y que ha disminuido su calidad. Se recomienda 
+    emplear este tipo de herramientas solo cuando necesites que la imagen tenga una extensión concreta, aunque la mayor parte de 
+    la tecnología actual se ha adaptado para manejar imágenes digitales en multitud de formatos.
+   </p>
+   
+
 </body>
 </html>
