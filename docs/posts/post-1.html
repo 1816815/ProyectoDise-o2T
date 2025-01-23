@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,5 +7,67 @@
 </head>
 <body>
     <h1>Imágenes y CSS</h1>
+    <h2>Propiedades de fondo (background)</h2>
+    <p>La propiedad background-image permite establecer una imagen como fondo de un elemento.</p>
+    <div class="bg bg-marco"></div>
+    <p>En este ejemplo, hemos usado background-size: cover para que la imagen cubra todo el contenedor, y background-position:
+         center para centrarla.</p>
+
+    <h3>Background Attachment</h3>
+    <p>La propiedad background-attachment determina si la imagen de fondo se desplaza con el contenido o permanece fija.</p>
+    
+    <div class="bg-attachment bg-marco"></div>
+    <p>Aquí, hemos usado background-attachment: fixed para que la imagen permanezca fija mientras se desplaza la página.</p>
+
+    <h2>Objetos en CSS</h2>
+    <p>Las propiedades object-fit y object-position permiten controlar cómo se ajusta una imagen dentro de su contenedor.</p>
+    <figure>
+        <img class="cover img-marco" src="./assets/img/campo_flores.jpg" alt="Ejemplo de object-fit cover">
+        <figcaption>Ejemplo de object-fit cover</figcaption>
+    </figure>
+    <figure>
+        <img class="fill img-marco" src="./assets/img/campo_flores.jpg" alt="Ejemplo de object-fit fill">
+        <figcaption>Ejemplo de object-fit fill</figcaption>
+    </figure>
+    <figure>
+        <img class="contain img-marco" src="./assets/img/campo_flores.jpg" alt="Ejemplo de object-fit contain">
+        <figcaption>Ejemplo de object-fit contain</figcaption>
+    </figure>
+    <figure>    
+        <img class="scale_down img-marco" src="./assets/img/campo_flores.jpg" alt="Ejemplo de object-fit scale-down">
+        <figcaption>Ejemplo de object-fit scale-down, se ve igual que en contain pues la imagen es más grande que el contenedor</figcaption>
+    </figure>
+    <figure>
+        <img class="cover img-segundo-marco obj-left" src="./assets/img/campo_flores.jpg" alt="Paisaje con object-position left">
+        <figcaption>Ejemplo de object-position left</figcaption>
+    </figure>
+    
+    <figure>
+        <img class="cover img-segundo-marco obj-right" src="./assets/img/campo_flores.jpg" alt="Paisaje con object-position right">
+        <figcaption>Ejemplo de object-position right</figcaption>
+    </figure>
+    
+    <figure>
+        <img class="cover img-marco obj-top" src="./assets/img/campo_flores.jpg" alt="Paisaje con object-position top">
+        <figcaption>Ejemplo de object-position top</figcaption>
+    </figure>
+    
+    <figure>
+        <img class="cover img-marco obj-bottom" src="./assets/img/campo_flores.jpg" alt="Paisaje con object-position bottom">
+        <figcaption>Ejemplo de object-position bottom</figcaption>
+    </figure>
+
+    
+    
+    <h3>Object View Box</h3>
+    <p>La propiedad object-view-box permite definir un área de visualización específica para la imagen, similar a la propiedad
+         viewBox en SVG.</p>
+         <figure>
+            <div class="view_box">
+                <img class="img-ejemplo" src="./assets/img/campo_flores.jpg" alt="Ejemplo de zoom pasando el ratón" >
+                <figcaption>Pasando el ratón sobre esta imagen, se hará un zoom centrado.</figcaption>
+            </div>
+            
+         </figure>
 </body>
 </html>

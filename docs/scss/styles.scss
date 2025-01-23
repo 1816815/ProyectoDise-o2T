@@ -24,8 +24,64 @@ $body-bg: lightgrey;
   }
 }
 }
+.borroso { filter: blur(5px); }
+.gris { filter: grayscale(100%); }
+.sepia { filter: sepia(60%); }
+.brillo { filter: brightness(150%); }
+.contraste { filter: contrast(200%); }
+.rotar { filter: hue-rotate(90deg); }
+.sombreado {filter: drop-shadow(16px 16px 20px blue);}
+.invertido {filter: invert(100%);}
+.sepia-borroso{filter: sepia(60%) blur(5px);}
 
+.bg-marco {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #333;
+  margin-bottom: 20px;
+}
+.bg {
+  background-image: url('../assets/img/campo_flores.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-attachment {
+  background-image: url('../assets/img/campo_flores.jpg');
+  background-attachment: fixed;
+  background-size: contain;
+}
+.img-marco {
+  width: 300px;
+  height: 150px;
+  border: 2px solid #333;
+  margin-bottom: 20px;
+}
+.img-segundo-marco{
+  width: 300px;
+  height: 300px;
+  border: 2px solid #333;
+  margin-bottom: 20px;
+}
+.cover {object-fit: cover ;}
+.fill{object-fit: fill ;}
+.contain{object-fit: contain ;}
+.scale_down{object-fit: scale-down ;}
 
+.obj-left { object-position: left; }
+.obj-right { object-position: right; }
+.obj-top { object-position: 50% 0%; }
+.obj-bottom { object-position: 50% 100%; }
+
+.view_box img {
+  width: 256px;
+  height: 256px;
+  transition: all 0.5s;
+  object-view-box: inset(0% 0% 0% 0%);
+  border: 2px solid #333;
+}
+
+.view_box img:hover {object-view-box: inset(20% 20% 20% 20%);}
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";

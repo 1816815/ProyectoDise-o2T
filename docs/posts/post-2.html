@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,5 +7,61 @@
 </head>
 <body>
     <h1>Filtros en CSS</h1>
+    <p>En este post vamos a hacer una demostración práctica de los filtros en CSS aplicados
+        sobre una misma imagen. Como referencia, tomaremos esta imagen del logo de CSS con el
+        significativo color Rebeccapurple.
+    </p>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3">
+    </figure>
+    <p>De cara a la demostración, la sintaxis de css para cada filtro que usamos es:</p>
+    <figure>
+        <img src="./assets/img/css_filtros.png" alt="Codigo css que configura los filtros">
+    </figure>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3 borroso" class="borroso">
+        <figcaption>Imagen con 5 píxeles de blur</figcaption>
+    </figure>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3 en blanco y negro" class="gris">
+        <figcaption>Imagen en escala de grises</figcaption>
+    </figure>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3 en sepia" class="sepia">
+        <figcaption>Imagen con filtro sepia</figcaption>
+    </figure>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3 con mucho brillo" class="brillo">
+        <figcaption>Imagen con el brillo al 150%</figcaption>
+    </figure>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3 con mucho contraste" class="contraste">
+        <figcaption>Imagen con el contraste al 200%</figcaption>
+    </figure>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3 con colores desalineados" class="rotar">
+        <figcaption>Imagen con rotación de tonos de 90º</figcaption>
+    </figure>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3 proyectando sombra con un filtro" class="sombreado">
+        <figcaption>Imagen con filtro de proyección de sombra</figcaption>
+    </figure>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3 con sus colores invertidos." class="invertido">
+        <figcaption>Imagen con escala de colores invertida</figcaption>
+    </figure>
+    <figure>
+        <img src="./assets/img/logocss.webp" alt="logo de css3 sepia y borroso." class="sepia-borroso">
+        <figcaption>¡Podemos aplicar varios filtros a la vez!</figcaption>
+    </figure>
+    <p>Los filtros pueden influir mucho a la hora de definir la experiencia de usuario. Además, manipular una imagen de este
+        modo es mucho más eficiente para un desarrollador web que tener que editar una misma imagen y subirla en distintos
+        estados. En Bootstrap 5 no hay clases específicas para aplicar filtros a una imagen, pero como se ha visto, aplicar
+        un filtro en css no ocupa más de una línea.
+    </p>
+    <p>Como dato curioso, si haces click derecho en una de las imágenes de prueba y seleccionas "Abrir imagen en una pestaña
+        nueva", se te mostrará la imagen sin filtros aplicados. Estarás accediendo directamente a la referencia del archivo, 
+        sin css aplicable.
+    </p>
 </body>
 </html>
