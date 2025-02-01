@@ -1,6 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
     let table;
     
+    function showConfirmModal(message, onConfirm) {
+        const modalElement = document.getElementById('confirmModal');
+        if (!modalElement) {
+          console.error("No se encontró el elemento #confirmModal en el DOM");
+          return;
+        }
+        const modal = new bootstrap.Modal(modalElement, {
+          backdrop: 'static',
+          keyboard: false
+        });
+        
+  
+        const modalBody = document.getElementById('confirmModalBody');
+        modalBody.textContent = message;
+        
+  
+        let confirmButton = document.getElementById('confirmModalAccept');
+        const newConfirmButton = confirmButton.cloneNode(true);
+        confirmButton.parentNode.replaceChild(newConfirmButton, confirmButton);
+        confirmButton = newConfirmButton;
+  
+        confirmButton.addEventListener('click', () => {
+          onConfirm();
+          modal.hide();
+        });
+        
+        modal.show();
+      }
+    
+
+
     function cargarUsuarios() {
         let usuarios = JSON.parse(localStorage.getItem('usuarios'));
         if (!usuarios) {
@@ -83,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
     cargarUsuarios();
 
     window.bloquearUsuario = function(email) {
-        if (confirm('¿Estás seguro de que quieres bloquear a este usuario?')) {
+        showConfirmModal('¿Estás seguro de que quieres bloquear este usuario?', function() {
             let usuarios = JSON.parse(localStorage.getItem('usuarios'));
             const userIndex = usuarios.findIndex(user => user.email === email);
             if (userIndex !== -1) {
@@ -91,11 +122,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('usuarios', JSON.stringify(usuarios));
                 table.clear().rows.add(usuarios).draw();
             }
-        }
+        });
     };
 
     window.desbloquearUsuario = function(email) {
-        if (confirm('¿Estás seguro de que quieres desbloquear a este usuario?')) {
+        showConfirmModal('¿Estás seguro de que quieres desbloquear este usuario?', function() {
             let usuarios = JSON.parse(localStorage.getItem('usuarios'));
             const userIndex = usuarios.findIndex(user => user.email === email);
             if (userIndex !== -1) {
@@ -103,17 +134,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('usuarios', JSON.stringify(usuarios));
                 table.clear().rows.add(usuarios).draw();
             }
-        }
+        });
     };
-
     window.borrarUsuario = function(email) {
-        if (confirm('¿Estás seguro de que quieres borrar a este usuario?')) {
+        showConfirmModal('¿Estás seguro de que quieres borrar este usuario?', function() {
             let usuarios = JSON.parse(localStorage.getItem('usuarios'));
             usuarios = usuarios.filter(user => user.email !== email);
             localStorage.setItem('usuarios', JSON.stringify(usuarios));
             table.clear().rows.add(usuarios).draw();
-        }
+        });
     };
+
+
 
 
         window.abrirFormulario = function (email) {

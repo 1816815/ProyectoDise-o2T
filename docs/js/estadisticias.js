@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const numUsuarios = usuarios.length;
     const numPublicaciones = publicaciones.length;
     const numUsuariosBloqueados = usuarios.filter(u => u.bloqueado).length;
-    const numPublicacionesBloqueadas = publicaciones.filter(p => p.bloqueado).length;
+    const numPublicacionesBloqueadas = publicaciones.filter(p => p.bloqueada).length;
 
 
     document.getElementById('num-usuarios').textContent = numUsuarios;

@@ -18,12 +18,24 @@
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3" href="index.html">Blogpost</a>
         <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <button id="sidebarToggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="list-unstyled d-flex mb-0">
+            <li><a href="posts.html" class="nav-link text-light fw-bold ms-3 my-auto">Publicaciones</a></li>
+            <li><a href="usuarios.html" class="nav-link text-light fw-bold ms-3 my-auto">Usuarios</a></li>
+        </ul>
+        
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
-                <input class="form-control" type="text" placeholder="Buscar..." aria-label="Buscar..." aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                <input class="form-control" type="text" placeholder="Buscar..." aria-label="Buscar..."
+                    aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
+                        class="fas fa-search"></i></button>
             </div>
         </form>
         <!-- Navbar-->
@@ -34,11 +46,14 @@
                 </button>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#!">Ajustes</a></li>
                     <li><a class="dropdown-item" href="#!">Actividad</a></li>
-                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
                     <li><a class="dropdown-item" href="#!">Cerrar Sesión</a></li>
                 </ul>
             </li>
@@ -52,12 +67,12 @@
 
 
 
-                            <div class="sb-sidenav-menu-heading d-md-none">Tema</div>
-                            <a class="nav-link d-md-none" href="#" id="darkModeToggleMobile">
-                                <div class="sb-nav-link-icon"><i class="fas fa-moon"></i></div>
-                                Cambiar modo
-                            </a>
-                       
+                        <div class="sb-sidenav-menu-heading d-md-none">Tema</div>
+                        <a class="nav-link d-md-none" href="#" id="darkModeToggleMobile">
+                            <div class="sb-nav-link-icon"><i class="fas fa-moon"></i></div>
+                            Cambiar modo
+                        </a>
+
 
                         <div class="sb-sidenav-menu-heading">Funcionalidades</div>
                         <a class="nav-link" href="index.html">
@@ -69,40 +84,50 @@
                             Usuarios
                         </a>
                         <div class="sb-sidenav-menu-heading">Interface</div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                             Layouts
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="layout-static.html">Static Navigation</a>
                                 <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                             </nav>
                         </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                            aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Pages
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
+                                    aria-controls="pagesCollapseAuth">
                                     Authentication
                                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                 </a>
-                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
+                                    data-bs-parent="#sidenavAccordionPages">
                                     <nav class="sb-sidenav-menu-nested nav">
                                         <a class="nav-link" href="login.html">Login</a>
                                         <a class="nav-link" href="register.html">Register</a>
                                         <a class="nav-link" href="password.html">Forgot Password</a>
                                     </nav>
                                 </div>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#pagesCollapseError" aria-expanded="false"
+                                    aria-controls="pagesCollapseError">
                                     Error
                                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                 </a>
-                                <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne"
+                                    data-bs-parent="#sidenavAccordionPages">
                                     <nav class="sb-sidenav-menu-nested nav">
                                         <a class="nav-link" href="401.html">401 Page</a>
                                         <a class="nav-link" href="404.html">404 Page</a>
@@ -131,36 +156,49 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container mt-5">
-                    <h1 id="formularioTitulo" class="mb-4 text-center"></h1>
+                    <h1 id="formularioTitulo" class="mb-4 text-center">Formulario de Usuario</h1>
+                    <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div>
                     <form id="usuarioForm">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Indique su nombre" required>
+                        <div class="form-section" data-section="1">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Indique su nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellidos" class="form-label">Apellidos</label>
+                                <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Indique sus apellidos" required>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="apellidos" class="form-label">Apellidos</label>
-                            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Indique sus apellidos" required>
+                        <div class="form-section" data-section="2" style="display: none;">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@mail.es" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                                <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@mail.es" required>
+                        <div class="form-section" data-section="3" style="display: none;">
+                            <div class="mb-3">
+                                <label for="ciudadResidencia" class="form-label">Ciudad de residencia</label>
+                                <input type="text" class="form-control" id="ciudadResidencia" name="ciudadResidencia" placeholder="Indique la ciudad donde reside" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="paisResidencia" class="form-label">País de residencia</label>
+                                <input type="text" class="form-control" id="paisResidencia" name="paisResidencia" placeholder="Indique el país donde reside" required>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
-                            <input type="date" class="form-control" id="fechaNacimiento" name="Indique su fecha de nacimiento" required>
+                        <div class="d-flex justify-content-between mt-4">
+                            <button type="button" class="btn btn-secondary" id="prevBtn" style="display: none;">Anterior</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn">Siguiente</button>
+                            <button type="submit" class="btn btn-success" id="submitBtn" style="display: none;">Guardar</button>
                         </div>
-                        <div class="mb-3">
-                            <label for="ciudadResidencia" class="form-label">Ciudad de residencia</label>
-                            <input type="text" class="form-control" id="ciudadResidencia" name="ciudadResidencia" placeholder="Indique la ciudad donde reside" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="paisResidencia" class="form-label">País de residencia</label>
-                            <input type="text" class="form-control" id="paisResidencia" name="paisResidencia" placeholder="Indique el país donde reside" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                        <button type="button" class="btn btn-secondary ms-2" onclick="window.history.back()">Cancelar</button>
                     </form>
                 </div>
+                
             </main>
     <footer class="py-4 bg-light mt-auto">
         <div class="container-fluid px-4">
