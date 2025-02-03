@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             for (let i = 0; i < camposFormateados.length; i++) {
                 perfilHTML += `
                     <div class="col-md-6 mb-3">
-                        <div class="card">
+                        <div class="card perfil-card">
                             <div class="card-body">
                                 <h5 class="card-title">${camposFormateados[i]}</h5>
                                 <p class="card-text">${valoresUsuario[i]}</p>

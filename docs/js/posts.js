@@ -108,21 +108,21 @@ document.addEventListener('DOMContentLoaded', function() {
             render: function(data, type, row) {
               const bloqueada = row.bloqueada;
               return `
-                <div class="container p-0">
-                  <div class="row g-1">
-                    <div class="col-6">
-                      <button class="btn btn-primary btn-sm w-100 ver-publicacion" data-titulo="${row.titulo}" ${bloqueada ? 'disabled' : ''}>
-                        Ver
-                      </button>
-                    </div>
-                    <div class="col-6">
-                      <button class="btn ${bloqueada ? 'btn-success' : 'btn-warning'} btn-sm w-100 toggle-publicacion" data-titulo="${row.titulo}" data-bloqueada="${bloqueada}">
-                        ${bloqueada ? 'Desbloquear' : 'Bloquear'}
-                      </button>
-                    </div>
+              <div class="container p-0">
+                <div class="row g-1">
+                  <div class="col-12 col-md-6 mb-1 mb-md-0">
+                    <button class="btn btn-primary btn-sm w-100 ver-publicacion" data-titulo="${row.titulo}" ${bloqueada ? 'disabled' : ''}>
+                      Ver
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <button class="btn ${bloqueada ? 'btn-success' : 'btn-warning'} btn-sm w-100 toggle-publicacion" data-titulo="${row.titulo}" data-bloqueada="${bloqueada}">
+                      ${bloqueada ? 'Desbloquear' : 'Bloquear'}
+                    </button>
                   </div>
                 </div>
-              `;
+              </div>
+            `;
             },
             className: 'align-middle text-center'
           }

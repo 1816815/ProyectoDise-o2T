@@ -72,20 +72,18 @@ document.addEventListener('DOMContentLoaded', function() {
                         return `
     <div class="container p-0">
       <div class="row g-1">
-        <div class="col-6">
+        <div class="col-12 col-md-6 mb-1 mb-md-0">
           <button class="btn btn-primary btn-sm w-100" onclick="abrirFormulario('${row.email}')" ${bloqueado ? 'disabled' : ''}>Editar Perfil</button>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6 mb-1 mb-md-0">
           <button class="btn btn-secondary btn-sm w-100" onclick="verPosts('${row.email}')" ${bloqueado ? 'disabled' : ''}>Ver Posts</button>
         </div>
-      </div>
-      <div class="row g-1 mt-1">
-        <div class="col-6">
+        <div class="col-12 col-md-6 mb-1 mb-md-0">
           <button class="btn ${bloqueado ? 'btn-success' : 'btn-warning'} btn-sm w-100" onclick="${bloqueado ? 'desbloquearUsuario' : 'bloquearUsuario'}('${row.email}')">
             ${bloqueado ? 'Desbloquear' : 'Bloquear'}
           </button>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <button class="btn btn-danger btn-sm w-100" onclick="borrarUsuario('${row.email}')">Borrar</button>
         </div>
       </div>
